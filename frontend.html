@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техподдержка</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="support-container">
+        <h1><i class="fas fa-headset"></i> Техническая поддержка</h1>
+        <p>Заполните форму ниже, и наша команда свяжется с вами в ближайшее время.</p>
+        
+        <form id="supportForm" class="support-form">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+                <label for="subject">Тема сообщения:</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Выберите тему</option>
+                    <option value="Техническая проблема">Техническая проблема</option>
+                    <option value="Вопрос по функционалу">Вопрос по функционалу</option>
+                    <option value="Предложение по улучшению">Предложение по улучшению</option>
+                    <option value="Другое">Другое</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Опишите вашу проблему или вопрос..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <span>Я согласен на обработку персональных данных</span>
+                </label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Отправить сообщение</button>
+        </form>
+        
+        <div id="successMessage" class="success-message hidden">
+            <i class="fas fa-check-circle"></i>
+            <h2>Спасибо за ваше сообщение!</h2>
+            <p>Мы получили ваш запрос и свяжемся с вами в ближайшее время.</p>
+            <button id="newMessageBtn" class="new-message-btn">Отправить новое сообщение</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
