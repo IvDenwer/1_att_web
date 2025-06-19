@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* Контейнер формы */
 .support-container {
     background-color: white;
     border-radius: 10px;
@@ -38,7 +37,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* Форма */
 .support-form {
     display: flex;
     flex-direction: column;
@@ -78,7 +76,6 @@ body {
     min-height: 120px;
 }
 
-/* Чекбокс */
 .checkbox-label {
     display: flex;
     align-items: center;
@@ -93,7 +90,6 @@ body {
     cursor: pointer;
 }
 
-/* Кнопка */
 .submit-btn {
     background-color: #3498db;
     color: white;
@@ -110,7 +106,6 @@ body {
     background-color: #2980b9;
 }
 
-/* Сообщение об успехе */
 .success-message {
     text-align: center;
     padding: 30px;
@@ -147,12 +142,10 @@ body {
     background-color: #27ae60;
 }
 
-/* Утилиты */
 .hidden {
     display: none;
 }
 
-/* Адаптивность */
 @media (max-width: 480px) {
     .support-container {
         padding: 20px;
